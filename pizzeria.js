@@ -5,11 +5,17 @@ var restify = require('restify');
 
 
 //crear connector de chat, msg, skype, etc
-var connector = new builder.ChatConnector();
-
+var connector = new builder.ChatConnector ({ 
+    appId: process.env.BOTFRAMEWORK_APPID, 
+    appPassword: process.env.BOTFRAMEWORK_APPSECRET
+});
 
 //Creo el bot
 var bot = new builder.UniversalBot(connector);
+
+
+
+
 
 
 // Crearmos el servidor
