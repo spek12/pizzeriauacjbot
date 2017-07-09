@@ -1,6 +1,6 @@
 {
 "dependencies":{
-   "botbuilder": "^3.2.3",
+   "botbuilder": "^3.8.3",
    "restify": "^4.1.1"   
    }
 
