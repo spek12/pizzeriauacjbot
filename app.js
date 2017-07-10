@@ -30,7 +30,9 @@ server.post('/api/messages', connector.listen());
 
 //Creamos la conexion con LUIS
 
-const recognizer = new builder.LuisRecognizer('https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/aa8663b3-153a-4190-81b0-deaa1dcba418?subscription-key=1b32aced334346dcb4d40613fac774fe&verbose=true&timezoneOffset=-420&q=');
+
+const model = process.env.LUIS_MODEL;
+const recognizer = new builder.LuisRecognizer(model)
 const intents = new builder.IntentDialog({ recognizers: [recognizer] });
 
 bot.dialog('/', intents); 
