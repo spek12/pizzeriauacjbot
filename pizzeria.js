@@ -9,8 +9,8 @@ const https = require('https');
 
 
 //crear connector de chat, msg, skype, etc
-var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
+var connector = new builder.ChatConnector ({ 
+    appId: process.env.MICROSOFT_APP_ID, 
     appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
