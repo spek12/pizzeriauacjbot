@@ -154,7 +154,7 @@ var salesData = {
 
 intents.matches('Saludar', [
     function (session) {
-    session.send('Hola, Bienvenido a Dominos Pizza);
+    session.send('Hola, Bienvenido a Dominos Pizza');
     session.beginDialog('pizzas');
     },
     function (session, results) {
