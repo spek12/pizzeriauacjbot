@@ -1,2 +1,0 @@
-# pizzeriauacjbot
-Es un ejemplo
